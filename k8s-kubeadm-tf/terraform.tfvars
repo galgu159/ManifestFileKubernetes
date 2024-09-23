@@ -1,0 +1,10 @@
+cluster_name = "galgu-Polybot-k8s"
+aws_region = "eu-west-3"
+ami_id = "ami-04a92520784b93e73"
+public_subnet_ids = ["subnet-07d3e34bf2a52d602", "subnet-013dbea9cfc4d227c"]
+control_plane_iam_role = "galgu-cluster-controle-plane"
+control_plane_sg_ids = ["sg-0a1d547079ff4bfd7"]
+worker_node_iam_role = "galgu-cluster-worker-node"
+worker_node_sg_ids = ["sg-0a1d547079ff4bfd7"]
+key_pair_name = "galgu-Paris-Key"
+instance_type = "t3.medium"
