@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: yolo5-deployment
-  namespace: prod
+  namespace: dev
   labels:
     app: yolo5
 spec:
@@ -18,7 +18,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
         - name: yolo5
-          image: galgu/yolo5:15
+          image: galgu/yolo2:2
           resources:
             requests:
               cpu: "100m"
@@ -41,8 +41,8 @@ spec:
 apiVersion: autoscaling/v1  # Changed to v1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: yolo5-hpa
-  namespace: prod
+  name: yolo5-hpa2
+  namespace: dev
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
