@@ -18,7 +18,7 @@ spec:
       terminationGracePeriodSeconds: 30
       containers:
         - name: yolo5
-          image: galgu/yolo5:15
+          image: galgu/yolo5:8494bcead55d98f6abf339d3742d4e8b93d97c89
           resources:
             requests:
               cpu: "100m"
