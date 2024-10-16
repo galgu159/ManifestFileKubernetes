@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: galgu/polybot:c9398e3e080382df5ed289542b333ed8a067cc7e
+        image: galgu/polybot:8494bcead55d98f6abf339d3742d4e8b93d97c89
         ports:
         - containerPort: 8443 # Ensure this matches your application's listening port
 ---
